@@ -72,7 +72,7 @@ if (!isset($_SESSION["Usuario"])) {
 					<tr style="width:1000px;">
 						<td style="width:45px;">
 							<center><?= $i ?></center>
-						</td><!-- esto es igual a <? php // echo $fila[$i];
+						</td><!-- esto es igual a <?php // echo $fila[$i];
 													?>-->
 						<td style="width:400px;"><?= $fila[1] ?></td>
 						<td style="width:250px;">

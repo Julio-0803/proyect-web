@@ -27,7 +27,7 @@ class Usuario{
 	}
 	function modificar($id,$usuario,$login,$pass,$estado,$id_grupo_usu,$activo){
 		$objCado=new cado();
-		$sql="update usuario set nombre = '$usuario',user='$login',pass='$pass', 			estado=$estado,id_grupo_usu='$id_grupo_usu',user_activo='$activo' where id = $id";
+		$sql="update usuario set nombre = '$usuario',user='$login',pass=MD5('$pass'), 			estado=$estado,id_grupo_usu='$id_grupo_usu',user_activo='$activo' where id = $id";
 		$ejecutar=$objCado->ejecutar($sql);
 		return $ejecutar;
 

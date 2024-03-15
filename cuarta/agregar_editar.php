@@ -39,13 +39,13 @@ if($tipo=="agregar"){
 	
 	$objUsuario= new Usuario();
 	$objUsuario->registrar($nombres,$user,$pass,$estado,$grupo,$activo);
-	//header('Location: usuario.php');
+	header('Location: usuario.php');
 }
 elseif ($tipo=="editar"){
 		
 	$objUsuario= new Usuario();
 	$objUsuario->modificar($id,$nombres,$user,$pass,$estado,$grupo,$activo);
-	//header('Location: usuario.php');
+	header('Location: usuario.php');
 }
 
 
