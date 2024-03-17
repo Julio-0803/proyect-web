@@ -11,9 +11,8 @@ if(!isset($_SESSION["Usuario"])) {
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 
 
-$tipo=validar($_POST["txtTipoOperacion"]);
+	$tipo=validar($_POST["txtTipoOperacion"]);
 
-	
 	$id=validar($_POST["txtID"]);
 	
 	$nombres=validar($_POST["txtNombre"]);
@@ -27,6 +26,8 @@ $tipo=validar($_POST["txtTipoOperacion"]);
 	$grupo=validar($_POST["cboGrupo"]);
 		
 	$activo=validar($_POST["cboActivo"]);
+
+
 }
   function validar($data) {
   $data = trim($data);

@@ -20,7 +20,7 @@ class Usuario{
 	}
 	function eliminar($id){
 		$objCado=new cado();
-		$sql="UPDATE usuario SET user_activo = 1 WHERE id = $id";
+		$sql="DELETE FROM usuario WHERE id = $id";
 		$ejecutar=$objCado->ejecutar($sql);
 		return $ejecutar;
 

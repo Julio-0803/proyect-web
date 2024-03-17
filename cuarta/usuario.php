@@ -271,7 +271,7 @@ if (!isset($_SESSION["Usuario"])) {
 		}
 
 		function descargas() {
-			window.location.href = "descargas.php";
+			window.open("descargas.php", "_blank");
 
 
 		}
